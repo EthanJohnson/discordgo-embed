@@ -88,6 +88,7 @@ func (e *Embed) AddField(name, value string) *Embed {
 		fields = append(fields, &discordgo.MessageEmbedField{
 			Name:  name,
 			Value: value,
+			Inline, true,
 		})
 	}
 
